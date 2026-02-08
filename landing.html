@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japoneria - Alta Cocina Japonesa</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jp-gold': '#B89146',  
+                        'jp-black': '#1a1a1a',
+                        'jp-light': '#f9f9f9',
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+        }
+    </style>
+</head>
+<body class="bg-white text-jp-black font-sans antialiased">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-serif text-jp-black tracking-widest uppercase border-2 border-jp-black px-3 py-1 hover:bg-jp-black hover:text-white transition-colors duration-300">
+                        JP
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-12">
+                        <a href="#inicio" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Inicio</a>
+                        <a href="#historia" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Historia</a>
+                        <a href="#proyecto" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">El Proyecto</a>
+                        <a href="#equipo" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Equipo</a>
+                        <a href="#menu" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Menú</a>
+                        <a href="#contacto" class="px-6 py-2 border border-jp-black text-jp-black hover:bg-jp-black hover:text-white transition-all duration-300 uppercase text-xs tracking-widest font-bold">
+                            Reservar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?q=80&w=2574&auto=format&fit=crop" alt="Ambiente Japonés" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+        <div class="relative z-20 text-center px-4 animate-fade-in-up">
+            <p class="text-white text-sm md:text-base tracking-[0.4em] uppercase mb-4 drop-shadow-md">Medellín, Colombia</p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-wide leading-tight drop-shadow-lg">
+                JAPONERIA<br><span class="text-3xl md:text-5xl italic text-gray-100 font-light">S.A.S.</span>
+            </h1>
+            <div class="flex justify-center gap-6 mt-10">
+                <a href="#historia" class="px-8 py-3 bg-white text-jp-black font-bold text-xs uppercase tracking-widest hover:bg-jp-black hover:text-white transition-colors shadow-lg">
+                    Conocer Más
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="historia" class="py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-jp-gold uppercase tracking-[0.2em] text-xs font-bold">Nuestra Historia</span>
+            <h2 class="font-serif text-4xl md:text-5xl text-jp-black mt-4 mb-8">Reivindicación Cultural</h2>
+            <div class="w-20 h-px bg-jp-gold mx-auto mb-10"></div>
+            
+            <h3 class="font-serif text-2xl text-gray-800 italic mb-6">"Yuka Tomita en Colombia"</h3>
+            
+            <p class="text-gray-600 text-lg leading-relaxed font-light mb-8 text-justify md:text-center">
+                Después de llegar a Colombia a aprender español, posterior a un breve paso por Australia e Inglaterra, 
+                <strong class="text-jp-black font-medium">Yuka</strong>, una joven japonesa, decide estudiar cómo se vive su cultura a nivel gastronómico 
+                en un país lejano como lo es Colombia. Específicamente en Medellín, se encuentra con opciones variadas, 
+                sin embargo bastante adaptadas al estilo latinoamericano, descuidando las raíces auténticas de Japón: 
+                su delicadeza, pureza, elaboración y simplicidad.
+            </p>
+            
+            <p class="text-gray-600 text-lg leading-relaxed font-light text-justify md:text-center">
+                Por ello, decide conformar una empresa junto a su esposo colombiano con sede en Medellín, la cual tiene 
+                por misión realizar labores pedagógicas a través del comercio de experiencias a nivel gastronómico en 
+                espacios diseñados teniendo en cuenta la originalidad de la cultura japonesa.
+            </p>
+        </div>
+    </section>
+
+    <section id="proyecto" class="py-24 bg-jp-light">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="h-96 md:h-[500px] overflow-hidden relative shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1621852004158-b3976696fb3d?q=80&w=2670&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Detalle Japonés">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+
+                <div class="text-left">
+                    <span class="text-jp-gold uppercase tracking-[0.2em] text-xs font-bold">El Proyecto</span>
+                    <h2 class="font-serif text-4xl text-jp-black mt-4 mb-8">Japón en Colombia</h2>
+                    
+                    <blockquote class="border-l-4 border-jp-gold pl-6 py-2 my-8">
+                        <p class="font-serif text-2xl text-gray-700 italic leading-normal">
+                            "Por medio de experiencias sensoriales relacionadas con la gastronomía, el diseño y la arquitectura, 
+                            damos a conocer las raíces auténticas japonesas y su cultura poco desarrollada en Colombia."
+                        </p>
+                    </blockquote>
+                    
+                    <div class="mt-6">
+                        <p class="text-jp-black font-bold uppercase tracking-widest text-sm">Yuka Tomita</p>
+                        <p class="text-gray-500 text-xs uppercase tracking-wider mt-1">CEO & Co-Fundadora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-jp-gold uppercase tracking-[0.2em] text-xs font-bold">Nuestro Equipo</span>
+                <h2 class="font-serif text-4xl text-jp-black mt-4">Fundadores</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-gray-50">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Alejandro Quiñones">
+                    </div>
+                    <h3 class="font-serif text-2xl text-jp-black mb-1">Alejandro Quiñones</h3>
+                    <p class="text-jp-gold text-xs uppercase tracking-widest font-bold mb-4">General Manager</p>
+                    <p class="text-gray-500 font-light text-sm italic max-w-xs">
+                        "Arquitecto, amante a la contemplación y al constante aprendizaje."
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-gray-50">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Yuka Tomita">
+                    </div>
+                    <h3 class="font-serif text-2xl text-jp-black mb-1">Yuka Tomita</h3>
+                    <p class="text-jp-gold text-xs uppercase tracking-widest font-bold mb-4">CEO</p>
+                    <p class="text-gray-500 font-light text-sm italic max-w-xs">
+                        "Apasionada por la cocina y el diseño, orgullosa de sus raíces Japonesas."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 bg-jp-light border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-jp-gold uppercase tracking-[0.2em] text-xs font-bold">Descubre</span>
+                <h2 class="font-serif text-4xl text-jp-black mt-4">Nuestra Propuesta</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2670&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Sushi">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-jp-black mb-2">Sushi & Nigiri</h3>
+                        <p class="text-gray-500 text-sm font-light">Cortes frescos y técnicas tradicionales.</p>
+                    </div>
+                </div>
+                <div class="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594051010777-a87f73db9420?q=80&w=2670&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Ramen">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-jp-black mb-2">Platos Calientes</h3>
+                        <p class="text-gray-500 text-sm font-light">Ramen, gyozas y arroces especiales.</p>
+                    </div>
+                </div>
+                <div class="group bg-white shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2670&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cocktails">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-2xl text-jp-black mb-2">Cócteles</h3>
+                        <p class="text-gray-500 text-sm font-light">Mixología inspirada en sabores orientales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-jp-black text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left gap-10">
+                <div class="md:w-1/3">
+                    <h3 class="font-serif text-2xl mb-4">Japoneria S.A.S</h3>
+                    <p class="text-gray-400 text-sm">Alta cocina japonesa en Medellín.</p>
+                </div>
+                <div class="md:w-1/3">
+                    <h4 class="text-jp-gold uppercase tracking-widest text-xs font-bold mb-4">Visítanos</h4>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Medellín, Antioquia<br>
+                        Zona Rosa / El Poblado<br>
+                        Colombia
+                    </p>
+                </div>
+                <div class="md:w-1/3">
+                    <h4 class="text-jp-gold uppercase tracking-widest text-xs font-bold mb-4">Contacto</h4>
+                    <p class="text-gray-400 font-light mb-2">reservas@japanproject.com.co</p>
+                    <p class="text-white font-serif text-xl">+57 (300) 123-4567</p>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-white/10 text-center">
+                <p class="text-gray-600 text-xs">© 2026 Japan Project S.A.S. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
