@@ -78,29 +78,38 @@
 </head>
 <body class="bg-white text-jp-black font-sans antialiased">
 
-     <nav class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-24">
-                <div class="flex-shrink-0">
-                    <a href="#" class="block w-16 h-16 p-1 border border-gray-100 hover:border-jp-gold transition-colors duration-300">
-                        <img src="img/logo.jpg" alt="Japoneria Logo" class="w-full h-full object-contain">
-                    </a>                    
+<nav class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-24">
+            <div class="flex-shrink-0">
+                <a href="#" class="block w-16 h-16 p-1 border border-gray-100 hover:border-jp-gold transition-colors duration-300">
+                    <img src="img/logo.jpg" alt="Japoneria Logo" class="w-full h-full object-contain">
+                </a>                    
+            </div>
+
+            <div class="flex items-center">
+                <div class="hidden md:flex items-baseline space-x-12 mr-12">
+                    <a href="#inicio" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Inicio</a>
+                    <a href="#historia" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Historia</a>
+                    <a href="#proyecto" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">El Proyecto</a>
+                    <a href="#equipo" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Equipo</a>
+                    <a href="https://drive.google.com/file/..." class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Menú</a>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-12">
-                        <a href="#inicio" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Inicio</a>
-                        <a href="#historia" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Historia</a>
-                        <a href="#proyecto" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">El Proyecto</a>
-                        <a href="#equipo" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Equipo</a>
-                        <a href="https://drive.google.com/file/d/1KUBCXMEnT6PubHCyaj617L0ZBptjz9g7/view?usp=drivesdk" class="text-sm font-medium text-gray-600 hover:text-jp-gold transition-colors uppercase tracking-widest">Menú</a>
-                        <a href="https://wa.link/Japoneria" class="px-6 py-2 border border-jp-black text-jp-black hover:bg-jp-black hover:text-white transition-all duration-300 uppercase text-xs tracking-widest font-bold">
-                            Reservar
-                        </a>
-                    </div>
-                </div>
+
+                <a href="https://wa.link/Japoneria" class="flex items-center justify-center border border-jp-black text-jp-black hover:bg-jp-black hover:text-white transition-all duration-300 uppercase tracking-widest font-bold 
+                    /* Estilos Móvil (Calendario) */
+                    w-12 h-12 rounded-full text-lg md:rounded-none
+                    /* Estilos Web (Texto) */
+                    md:w-auto md:h-auto md:px-6 md:py-2 md:text-xs">
+                    
+                    <i class="fas fa-calendar-alt md:hidden"></i>
+                    
+                    <span class="hidden md:inline">Reservar</span>
+                </a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <header id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
